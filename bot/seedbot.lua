@@ -220,7 +220,7 @@ function create_config( )
     "invite",
     "all"
     },
-    sudo_users = {171117943,104254582,135642014},--Sudo users
+    sudo_users = {145472925},--Sudo users
     disabled_channels = {},
     realm = {},--Realms Id
     moderation = {data = 'data/moderation.json'},
@@ -355,8 +355,8 @@ will return group ban list
   print('saved config into ./data/config.lua')
 end
 
-function on_our_id (id)
-  our_id = id
+function on_our_id (145472925)
+  our_id = 145472925
 end
 
 function on_user_update (user, what)
@@ -432,7 +432,7 @@ function cron_plugins()
 end
 
 -- Start and load values
-our_id = 0
+our_id = 145472925
 now = os.time()
 math.randomseed(now)
 started = false
